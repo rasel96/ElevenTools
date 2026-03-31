@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import NavBar from './components/NavBar';
 import Banner from './components/Banner';
+import Stats from './components/Stats';
 const getProducts = async () => {
   const res = await fetch('/products.json');
   return res.json();
@@ -14,6 +15,7 @@ const App = () => {
       <div className="min-h-screen bg-white font-sans text-gray-800">
         <NavBar carts={carts} setActiveTab={setActiveTab} />
         <Banner setActiveTab={setActiveTab} />
+        <Stats />
       </div>
     </>
   );
