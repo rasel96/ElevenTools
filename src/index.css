@@ -1,0 +1,6 @@
+@import 'tailwindcss';
+@plugin "daisyui";
+:root {
+  --fallback-p: 262 83% 58%;
+  --fallback-pc: 0 0% 100%;
+}
