@@ -6,6 +6,7 @@ import Products from './components/Products';
 import Cart from './components/Cart';
 import Steps from './components/Steps';
 import Pricing from './components/Pricing';
+import CTA from './components/CTA';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const getProducts = async () => {
@@ -68,6 +69,7 @@ const App = () => {
           <>
             <Steps />
             <Pricing />
+            <CTA />
           </>
         )}
       </div>
