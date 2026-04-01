@@ -1,16 +1,24 @@
-# React + Vite
+# DigiTools
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A straightforward digital marketplace I built to help creators and developers
+find premium software tools. It's a single-page React application where users
+can browse a list of digital products, add them to a shopping cart, and see the
+total price update in real time.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React.js - for the core UI and state management
+- Tailwind CSS v4 & DaisyUI - for styling and pre-built components
+- React-Toastify - for quick pop-up alerts
+- Vite - for fast local development and building
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Live cart updates: Add or remove items without refreshing the page. The cart
+  automatically calculates the total price based on exactly what is currently in
+  it.
+- Instant feedback: You get a clean toast notification whenever you add a
+  product, remove an item, or clear your cart during checkout.
+- Smooth navigation: Instead of dealing with clunky page reloads, the app swaps
+  between the main product grid and the cart view using conditional rendering,
+  so everything feels fast and seamless.
