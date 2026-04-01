@@ -5,6 +5,7 @@ import Stats from './components/Stats';
 import Products from './components/Products';
 import Cart from './components/Cart';
 import Steps from './components/Steps';
+import Pricing from './components/Pricing';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const getProducts = async () => {
@@ -66,6 +67,7 @@ const App = () => {
         {activeTab === 'products' && (
           <>
             <Steps />
+            <Pricing />
           </>
         )}
       </div>
