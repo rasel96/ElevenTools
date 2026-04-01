@@ -4,6 +4,7 @@ import Banner from './components/Banner';
 import Stats from './components/Stats';
 import Products from './components/Products';
 import Cart from './components/Cart';
+import Steps from './components/Steps';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const getProducts = async () => {
@@ -62,6 +63,11 @@ const App = () => {
             />
           )}
         </main>
+        {activeTab === 'products' && (
+          <>
+            <Steps />
+          </>
+        )}
       </div>
     </>
   );
