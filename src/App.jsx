@@ -9,6 +9,7 @@ import Pricing from './components/Pricing';
 import CTA from './components/CTA';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from './components/Footer';
 const getProducts = async () => {
   const res = await fetch('/products.json');
   return res.json();
@@ -70,8 +71,14 @@ const App = () => {
             <Steps />
             <Pricing />
             <CTA />
+            <Footer />
           </>
         )}
+        <ToastContainer
+          position="bottom-right"
+          autoClose={3000}
+          hideProgressBar
+        />
       </div>
     </>
   );
